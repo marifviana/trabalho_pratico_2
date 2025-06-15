@@ -1,0 +1,52 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Demolidor: Renascido",
+      "ano": 2025,
+      "genero": "Ação, Aventura, Drama",
+      "descricao": "Matt Murdock, um advogado cego com habilidades fantásticas, luta por justiça através de seu agitado escritório de advocacia, enquanto o ex-chefe do crime Wilson Fisk busca seus próprios empreendimentos políticos em Nova Iorque.",
+      "imagem": "https://topflixlive.vc/resize/WGROOTZkaWlwWW9hdTdmSBG67eqjce9hCsw3h3MYbe2QKTPpGwCRjuywldIih35Zt1jtspi44Q-qG93LREMzsyydXFuL7QGFnUKSWgAd6Tnk0lbtzVujH0EtmCHOp-0_rfyDx8g-9Uwivp6gil3Pwg.webp?w=282&h=421",
+      "dataLancamento": "2025-06-01"
+    },
+    {
+      "id": 2,
+      "titulo": "Vingadores: Ultimato",
+      "ano": 2019,
+      "genero": "Ação, Ficção Científica",
+      "descricao": "Este filme é a culminação de mais de 20 filmes do MCU.",
+      "imagem": "https://tm.ibxk.com.br/2022/07/24/24003758882016.jpg",
+      "dataLancamento": "2025-06-12"
+    },
+    {
+      "id": 3,
+      "titulo": "Gladiador II",
+      "ano": 2025,
+      "genero": "Ação, Drama, Histórico",
+      "descricao": "Estrelado por Paul Mescal, Denzel Washington, Connie Nielsen, Joseph Quinn e Pedro Pascal.",
+      "imagem": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/11/gladiator-ii-poster-header.jpg",
+      "dataLancamento": "2025-06-04"
+    }
+  ],
+  "usuarios": [
+   
+     {
+      "id": 1,
+      "login": "mari",
+      "senha": "12346",
+      "favoritos": [0, 2, 3] 
+    },
+     {
+      "id": 2,
+      "login": "mary",
+      "senha": "13456",
+      "favoritos": [0, 2, 3] 
+    },
+     {
+      "id": 3,
+      "login": "maria",
+      "senha": "12345",
+      "favoritos": [0, 2, 3] 
+    }
+  ]
+}

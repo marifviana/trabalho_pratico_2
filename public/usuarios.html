@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de contatos</title>
+</head>
+<body>
+    <form id="cadastroForm">
+  <input type="text" id="novoLogin" placeholder="Novo login" required>
+  <input type="password" id="novaSenha" placeholder="Nova senha" required>
+  <button type="submit">Cadastrar</button>
+</form>
+<p id="msgCadastro"></p>
+
+<script>
+  document.getElementById('cadastroForm').addEventListener('submit', async function(event){
+    event.preventDefault();
+    const login = document.getElementById('novoLogin').value;
+    const senha = document.getElementById('novaSenha').value;
+
+    await fetch('http://localhost:3000/usuarios', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ login, senha, favoritos: [] })
+    });
+
+    document.getElementById('msgCadastro').innerText = 'Usuário cadastrado! Faça login.';
+  });
+</script>
+
+</body>
+</html>

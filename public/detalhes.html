@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalhes do Filme</title>
+ <link rel="stylesheet" href="assets/css/detalhes.css">
+</head>
+<body>
+  <div id="detalhes-filme">
+  </div>
+  <div class="botao-voltar">
+  <a href="index.html">Voltar para Início</a>
+</div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    const filmes = JSON.parse(localStorage.getItem('filmes')) || [];
+
+    if (id === null || !filmes[id]) {
+      document.getElementById('detalhes-filme').innerHTML = '<p>Filme não encontrado.</p>';
+    } else {
+      const filme = filmes[id];
+      document.getElementById('detalhes-filme').innerHTML = `
+        <h1>${filme.titulo}</h1>
+        <img src="${filme.imagem}" alt="${filme.titulo}" style="max-width:300px;" />
+        <p>${filme.descricao}</p>
+      `;
+    }
+  </script>
+</body>
+</html>

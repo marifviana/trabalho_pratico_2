@@ -1,0 +1,23 @@
+#calendar {
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #963aec;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-voltar:hover {
+ background-color: #1d2329;
+ text-decoration: none;
+}
+

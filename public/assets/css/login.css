@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(135deg, #201430, #000000);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+#login-box {
+  background: rgba(31, 31, 31, 0.664);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h3.text-info {
+  color: #ffffff !important;
+  margin-bottom: 20px;
+}
+
+label.text-info {
+  color: #ddd !important;
+}
+
+input.form-control {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+}
+
+input.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px #8443f5;
+}
+
+.btn-info {
+  color: white !important;
+  background-color: #6e52a1 !important;
+  border: none !important;
+}
+
+.btn-info:hover {
+  background-color: #451a94;
+}
+
+.modal-content {
+  background: #1a252f;
+  color: #fff;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #272727;
+}
+
+.btn-voltar {
+  border: none;
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #963aec;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-voltar:hover {
+ background-color: #1d2329;
+ text-decoration: none;
+}
